@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Lucida Console", sans-serif;
+    color: #ffffff;
+}
+
+.container3 {
+    background-color: #6A9AB0;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+    background-size: cover;
+    background-position: center;
+    filter: brightness(100%) contrast(120%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px;
+}
+
+.navbar2 {
+    position: absolute;
+    top: 20px;
+    right: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background:transparent; 
+    padding: 0px 5px;
+    border-radius: 8px;
+}
+
+.navbar2 ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar2 ul li {
+    margin: 0 10px;
+    position: relative;
+}
+
+.navbar2 ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.navbar2 ul li::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #ffffff;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: width 0.5s;
+}
+
+.navbar2 ul li:hover::after {
+    width: 100%;
+}
+
+.about-section {
+    background:transparent;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.about-section h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.about-section h2 {
+    font-size: 28px;
+    margin: 20px 0;
+}
+
+.about-section p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.contact-info {
+    list-style-type: none;
+    margin-top: 10px;
+    font-size: 18px;
+    text-align: left;
+}
+
+.enquiry-form {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.enquiry-form label {
+    margin: 10px 0 5px;
+    font-size: 16px;
+}
+
+.enquiry-form input, 
+.enquiry-form textarea {
+    width: 100%;
+    max-width: 400px;
+    padding: 12px;
+    border-radius: 10px;
+    border: 2px solid #ccc;
+    margin-bottom: 15px;
+    font-family: "Lucida Console";
+    color: #333;
+    background-color: #fff;
+    outline: none;
+}
+
+.enquiry-form textarea {
+    height: 100px;
+}
+
+.enquiry-form button {
+    background-color: blue;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.enquiry-form button:hover {
+    background-color: darkblue;
+    transform: scale(1.05);
+}
